@@ -1,0 +1,377 @@
+/* Base styles */
+:root {
+    --sand-tan: #e1b382;
+    --sand-tan-shadow: #c89666;
+    --night-blue: #2d545e;
+    --night-blue-shadow: #12343b;
+}
+
+#expolre-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--night-blue-shadow);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
+}
+
+.culture-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.culture-container img {
+    max-width: 40%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.culture-container #culture-p {
+    max-width: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.places-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.place {
+    position: relative;
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #f0f2f5);
+    transition: transform 0.3s ease;
+}
+
+.place:hover {
+    transform: scale(1.05);
+}
+
+.place img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.place:hover img {
+    filter: brightness(60%);
+}
+
+.place .button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.place .button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 1);
+    transform: translateX(-50%) scale(1.1);
+}
+
+#info-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--night-blue-shadow);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.tradition-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tradition-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.tradition-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.tradition-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.tradition-text {
+    flex: 2;
+}
+
+.tradition-text h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.tradition-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+#music-section {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.music-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.music-image {
+    width: 400px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description-text {
+    flex: 1;
+}
+
+#music-p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.music-figures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.figure {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.figure-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figure-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.figure-text {
+    max-width: 100%;
+}
+
+.figure-text h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.figure-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cusinie-p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    font-family: sans-serif;
+}
+
+#cuisine-section {
+    padding: 20px;
+}
+
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.cuisine-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuisine-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.cuisine-item:hover img {
+    transform: scale(1.05);
+}
+
+.cuisine-item h3 {
+    margin: 20px 10px;
+    color: #333;
+}
+
+.cuisine-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .place {
+        width: 45%;
+        height: auto;
+    }
+
+    .cuisine-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .place {
+        width: 100%;
+        height: auto;
+    }
+
+    .cuisine-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .culture-container {
+        flex-direction: column;
+    }
+
+    .culture-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tradition-content {
+        flex-direction: column;
+    }
+
+    .tradition-image, .tradition-text {
+        width: 100%;
+    }
+
+    .music-info {
+        flex-direction: column;
+    }
+
+    .music-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .figure {
+        flex-direction: column;
+    }
+
+    .figure-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .place {
+        width: 100%;
+        height: auto;
+    }
+
+    .cuisine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-container {
+        padding: 10px;
+    }
+
+    .tradition-content {
+        flex-direction: column;
+    }
+
+    .tradition-box {
+        flex-direction: column;
+    }
+
+    .music-content {
+        flex-direction: column;
+    }
+
+    .figure {
+        flex-direction: column;
+    }
+}
